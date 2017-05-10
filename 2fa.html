@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Two Factor Authentication</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Two Factor Authentication form using Bootstrap 4">
+    <meta name="keywords" content="Bootstrap, CSS, HTML">
+    <meta name="author" content="Edgars Zagorskis">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<form class="in-the-middle">
+    <div class="card">
+        <h3 class="card-header"><i class="fa fa-user-circle"></i> Two Factor Authentication</h3>
+
+        <div class="card-block">
+            <div class="lead">
+                <i class="fa fa-info-circle"></i>
+                Hi,
+                <mark>John Doe</mark>
+                , Your account is secured with Two Factor Authentication, therefore You will receive a SMS with a 6 character code to your phone number
+                <mark>+00-***-****-**00</mark>
+                .
+                <br>
+                If you do not receive the code within some minutes, try sending a new code.
+            </div>
+        </div>
+
+        <div class="card-block">
+            <div class="form-group row">
+                <label for="smscode" class="col-4 col-form-label text-right">SMS code</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="smscode" placeholder="6 character code">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-8 offset-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-block btn-success">Verify</button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-block btn-primary">Send new code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center small">
+        <a role="button" href="https://termsfeed.com/terms-conditions/generator/" target="_blank">Terms</a>
+        <span>|</span>
+        <a role="button" href="https://termsfeed.com/privacy-policy/generator/" target="_blank">Privacy</a>
+    </p>
+</form>
+
+</body>
+</html>

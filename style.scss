@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+}
+
+form.in-the-middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  > .card {
+    margin: 0 auto;
+    max-width:700px;
+    width: calc(100vw - 40px);
+  }
+}
